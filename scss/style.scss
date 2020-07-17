@@ -1,0 +1,81 @@
+@import "partials/mixins";
+@import "partials/reusable";
+@import "partials/variable";
+@import "partials/typography";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+// header
+.nav{
+    background-color: $color-black;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__logo{
+        margin-bottom: 1.6rem;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        color: white;
+    }
+}
+// hero image
+.hero {
+    background-image: url(../assets/images/hero-wallpaper.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 18.3rem;
+    max-width: 32rem;
+    display: flex;
+
+    &__heading{
+        display: flex;
+        align-self: center;
+        margin-left: 1.6rem;
+        color: white;
+    }
+}
+
+// main section
+.musician {
+    margin: 0 1.6rem;
+
+    &__image{
+        width: 28.8rem;
+        height: 14.5rem;
+    }
+
+    &__teamquote {
+        margin:  4rem 0 2.4rem 0;
+    }
+    &__info--special{
+        margin-bottom: 4rem;
+    }
+}
+
+
+.photo{
+    margin: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    &__images{
+        width: 28.8rem;
+        height: 16.2rem;
+        margin-bottom: 1.6rem;
+    }
+}
