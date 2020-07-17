@@ -9,6 +9,13 @@
     box-sizing: border-box;
 }
 
+@mixin footerColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @content;
+}
+
 html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
@@ -48,6 +55,7 @@ html {
         margin-left: 1.6rem;
         color: white;
     }
+   
 }
 
 // main section
@@ -78,4 +86,53 @@ html {
         height: 16.2rem;
         margin-bottom: 1.6rem;
     }
+}
+
+
+// Footer
+.footer{
+    background-color: $color-black;
+    height: 40rem;
+    padding-left: 1rem;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 36rem;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        height: 9rem;
+        justify-content: space-evenly;
+    }
+    &__logo{
+        display:none ;
+    }
+    &__icon--holder{
+        display: flex;
+        justify-content: space-between;
+        width: 42%;
+        margin-left: .6rem;
+    }
+}
+
+.media{
+    height: 27rem;
+    @include footerColumn();
+}
+
+.media__address{
+    @include footerColumn();
+    height: 9rem;
+}
+
+.travel__agents{
+    @include footerColumn();
+    height: 9rem;
+}
+
+.global{
+    @include footerColumn();
+    height: 9rem;
 }
