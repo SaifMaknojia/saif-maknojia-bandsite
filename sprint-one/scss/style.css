@@ -1,8 +1,138 @@
-.heading__special {
-  margin: 3.2rem 0 2.4rem 0;
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 
-* {
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-DemiIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-MediumIt.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-It.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro UltLight";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-UltLt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro UltLight";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-UltLtIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-HeavyIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-Demi.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../../assets/fonts/alt/AvenirNextLTPro-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+.heading__special {
+  margin: 32px 0 24px 0;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -10,13 +140,28 @@
 }
 
 html {
-  font-size: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "AvenirNext LT Pro", sans-serif;
+}
+
+.d-container {
+  max-width: 67.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav {
   background-color: #323232;
-  height: 8rem;
+  width: 100vw;
+  height: 5rem;
+}
+
+.nav__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,32 +172,95 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .nav__container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav__container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 .nav__logo {
-  margin-bottom: 1.6rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav__list {
+  height: 2.5rem;
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  list-style: none;
-  color: white;
+}
+
+.nav__list-item {
+  border-bottom: .25rem solid transparent;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #afafaf;
+}
+
+.nav__list-item:hover {
+  border-color: #fff;
+  color: #fff;
+  cursor: pointer;
 }
 
 .hero {
-  background-image: url(../assets/images/hero-wallpaper.jpeg);
+  background-image: url(../assets/images/music-event-2.jpeg);
   background-position: center;
   background-size: cover;
-  height: 18.3rem;
-  max-width: 32rem;
+  height: 11.44rem;
+  width: 100%;
+}
+
+.hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768) {
+  .hero__container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 .hero__heading {
@@ -61,48 +269,65 @@ html {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-left: 1.6rem;
   color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.musician {
-  margin: 0 1.6rem;
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768) {
+  .content {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 .musician__image {
-  width: 28.8rem;
-  height: 14.5rem;
+  width: 100%;
+}
+
+.musician__heading {
+  font-size: .875rem;
+  line-height: 1.375rem;
 }
 
 .musician__teamquote {
-  margin: 4rem 0 2.4rem 0;
+  margin: 2.5rem 0 1.5rem 0;
 }
 
 .musician__info--special {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
-.photo {
-  margin: 0 1.6rem;
+.photo__imageContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .photo__images {
-  width: 28.8rem;
-  height: 16.2rem;
-  margin-bottom: 1.6rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .footer {
   background-color: #323232;
-  height: 40rem;
   padding-left: 1rem;
+  margin-top: 1.875rem;
+  color: #fff;
 }
 
 .social-media {
@@ -116,7 +341,7 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 36rem;
+  width: 32rem;
 }
 
 .social-media__container {
@@ -127,10 +352,15 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 9rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.social-media__heading {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-top: 1.25rem;
 }
 
 .social-media__logo {
@@ -144,12 +374,12 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 42%;
-  margin-left: .6rem;
+  width: 30%;
+  margin-left: 0.6rem;
+  margin: 1.25rem 0;
 }
 
 .media {
-  height: 27rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +401,20 @@ html {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 9rem;
+}
+
+.media__address__bold {
+  margin-top: 1.25rem;
+}
+
+.travel__patners {
+  margin-top: 1.25rem;
+  font-style: .812rem;
+}
+
+.para__container {
+  margin: 1.25rem 0;
+  font-size: .812rem;
 }
 
 .travel__agents {
@@ -184,7 +427,6 @@ html {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 9rem;
 }
 
 .global {
@@ -197,6 +439,284 @@ html {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 9rem;
+}
+
+.global__patners {
+  margin-top: 1.25rem 0;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1.25rem 0;
+}
+
+@media (min-width: 768px) {
+  .nav__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    font-size: .875rem;
+    line-height: 1.375rem;
+  }
+  .nav__list-item {
+    height: 100%;
+    margin-left: 3.5rem;
+  }
+  .nav__list-item:last-of-type {
+    margin-left: 3rem;
+  }
+  .hero {
+    height: 400px;
+  }
+  .hero__heading {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+  .photo__images {
+    width: calc((100% / 3) - 1rem);
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .photo__heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .musician__incolumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .musician__info--space {
+    font-size: .875rem;
+    line-height: 1.375rem;
+  }
+  .musician__info--special {
+    margin-left: 1.5rem;
+  }
+  .musician__heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .musician__quote {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .musician__teamquote {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .social-media__heading {
+    width: 33.33%;
+    margin-right: 12px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .social-media__icon--holder {
+    width: 33.33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: auto 12px;
+  }
+  .social-media__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social-media__logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .logo__container {
+    width: 33.33%;
+  }
+  .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1.875rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .media__bold {
+    font-size: .875rem;
+    line-height: 1.375rem;
+  }
+  .travel__patners {
+    margin-top: 0;
+  }
+  .footer {
+    padding: 0 1.5rem;
+  }
+  .media__address,
+  .travel__agents,
+  .global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 33.33%;
+    font-size: .875rem;
+    line-height: 1.375rem;
+  }
+  .media__address:first-of-type,
+  .travel__agents:first-of-type,
+  .global:first-of-type {
+    margin-right: 12px;
+  }
+  .media__address:last-of-type,
+  .travel__agents:last-of-type,
+  .global:last-of-type {
+    margin-left: 12px;
+  }
+  .media__address:not(:first-of-type):not(:last-of-type),
+  .travel__agents:not(:first-of-type):not(:last-of-type),
+  .global:not(:first-of-type):not(:last-of-type) {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-bottom: 50px;
+  }
+}
+
+.para__container {
+  margin: 1.25rem 0;
+  font-size: .875rem;
+  line-height: 1.375rem;
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .nav__list {
+    margin-right: 0;
+  }
+  .nav__list-item {
+    margin-left: 3.5rem;
+  }
+  .hero {
+    height: 670px;
+  }
+  .musician__container {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+  .musician__image {
+    display: block;
+  }
+  .musician__quote {
+    margin: 3rem auto 2.5rem auto;
+  }
+  .musician__name {
+    margin: 0 auto 56px auto;
+  }
+  .musician__teamquote {
+    margin: 0 auto 2rem auto;
+  }
+  .musician__incolumn {
+    margin: 0 auto;
+  }
+  .musician__info--space {
+    width: 50%;
+  }
+  .court {
+    display: none;
+  }
+  .footer {
+    padding: 2.5rem 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

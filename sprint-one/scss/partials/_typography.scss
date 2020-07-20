@@ -1,5 +1,19 @@
 $color-black: #323232;
 $color-mercury: #E1E1E1;
+$color-silver: #afafaf;
+$color-white: #fff;
 
 
 
+@mixin footerColumnMobil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @content;
+}
+
+@mixin mobile-header-para{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    @content;
+}

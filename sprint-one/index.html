@@ -1,108 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BandSite</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./scss/style.css">
-</head>
-<body>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav">
-           <img class="nav__logo" src="./assets/logo/Logo-bandsite.svg">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a class="nav__list-item--anchor">Biography</a>
-                </li>
-                <li class="nav__list-item">
-                    <a class="nav__list-item--anchor">Shows</a>
-                </li>
-            </ul> 
-        </nav>
-        <section class="hero">
-            <h1 class="hero__heading heading__special">Gaspard Auge &<br>Xavier de Rosnay</h2>
-        </section>
+      <nav class="nav">
+        <div class="nav__container d-container">
+          <div class="nav__logo">
+            <img src="./assets/logo/Logo-bandsite.svg" />
+          </div>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__list-item--anchor">Biography</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-item--anchor">Shows</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero__container d-container">
+          <h1 class="hero__heading heading__special">
+            Gaspard Auge & Xavier de Rosnay
+          </h1>
+        </div>
+      </section>
     </header>
-    <main class="content">
-        <section class="musician">
-            <h2 class="musician__heading heading__special">About The Musicians</h2>
-                <img class="musician__image" src="./assets/images/musician.jpeg">
-                <h3 class="musician__quote heading__special">
-                "We are more comfortable with not fighting what comes naturally. Before we might have thought, ‘We need to be smarter than this."
-                </h3>
-                <h5 class="musician__name">- Xavier de Rosnay</h5>
-            <div>
-                <h4 class="musician__teamquote">Xavier de Rosnay & Gaspard Auge</h4>
-                <div class="musician__incolumn">
-                    <p class="musician__info--space">Xavier De Ronsay and Gaspard Augé had a few mutual friends, who happened to run a record label, seeking tracks for a compilation. With an immediate connection, the pair decided to try their hand at making a song. That’s when they created their breakout single, We Are Your Friends – a feel-good, funk-filled, instant anthem that lost the remix contest, but won the attention of Pedro Winter, director of the newly founded Ed Banger Records, who boasted Daft Punk as former clients. One week later, they were in his office, signing a record deal.
-                    </p>
-                    <p class="musician__info">&nbsp;</p>
-                    <p class="musician__info musician__info--special">
-                    Xavier De Ronsay and Gaspard Augé had a few mutual friends, who happened to run a record label, seeking tracks for a compilation. With an immediate connection, the pair decided to try their hand at making a song. That’s when they created their breakout single, We Are Your Friends – a feel-good, funk-filled, instant anthem that lost the remix contest, but won the attention of Pedro Winter, director of the newly founded Ed Banger Records, who boasted Daft Punk as former clients. One week later, they were in his office, signing a record deal.
-                    </p>
-                </div>
+    <main class="content d-container">
+      <section class="musician">
+        <h2 class="musician__heading heading__special">About The Musicians</h2>
+        <div class="musician__container">
+          <img class="musician__image" src="./assets/images/musician.jpg" />
+          <h3 class="musician__quote heading__special">
+            "We are more comfortable with not fighting what comes naturally.
+            Before we might have thought, ‘We need to be smarter than this."
+          </h3>
+          <h5 class="musician__name">- Xavier de Rosnay</h5>
+          <div>
+            <h4 class="musician__teamquote">Xavier de Rosnay & Gaspard Auge</h4>
+            <div class="musician__incolumn">
+              <p class="musician__info--space">
+                Xavier De Ronsay and Gaspard Augé had a few mutual friends, who
+                happened to run a record label, seeking tracks for a
+                compilation. With an immediate connection, the pair decided to
+                try their hand at making a song. That’s when they created their
+                breakout single, We Are Your Friends – a feel-good, funk-filled,
+                instant anthem that lost the remix contest, but won the
+                attention of Pedro Winter, director of the newly founded Ed
+                Banger Records, who boasted Daft Punk as former clients. One
+                week later, they were in his office, signing a record deal.
+              </p>
+              <p class="musician__info court">&nbsp;</p>
+              <p class="musician__info--space musician__info--special">
+                Xavier De Ronsay and Gaspard Augé had a few mutual friends, who
+                happened to run a record label, seeking tracks for a
+                compilation. With an immediate connection, the pair decided to
+                try their hand at making a song. That’s when they created their
+                breakout single, We Are Your Friends – a feel-good, funk-filled,
+                instant anthem that lost the remix contest, but won the
+                attention of Pedro Winter, director of the newly founded Ed
+                Banger Records, who boasted Daft Punk as former clients. One
+                week later, they were in his office, signing a record deal.
+              </p>
             </div>
-        </section>
-        <section class="photo">
-            <h2 class="photo__heading heading__special">Photo Gallery</h2>
-            <div class="photo__image--container">
-                <img class="photo__images" src="./assets/images/Photo-gallery-1.jpg">
-                <img class="photo__images" src="./assets/images/Photo-gallery-2.jpg">
-                <img class="photo__images" src="assets/images/Photo-gallery-3.jpg">
-                <img class="photo__images" src="./assets/images/Photo-gallery-4.jpg">
-                <img class="photo__images" src="./assets/images/Photo-gallery-5.jpg">
-                <img class="photo__images" src="./assets/images/Photo-gallery-6.jpg">
-                <img class="photo__images" src="./assets/images/Photo-gallery-7.jpg">
-                <img class="photo__images" src="./assets/images/Photo-gallery-8.jpg">
-                <img class="photo__images" src="./assets/images/Photo-gallery-9.jpg">
-            </div>   
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="photo">
+        <h2 class="photo__heading heading__special">Photo Gallery</h2>
+        <div class="photo__imageContainer">
+          <img
+            class="photo__images"
+            src="./assets/images/Photo-gallery-1.jpg"
+          />
+          <img
+            class="photo__images"
+            src="./assets/images/Photo-gallery-2.jpg"
+          />
+          <img class="photo__images" src="assets/images/Photo-gallery-3.jpg" />
+          <img
+            class="photo__images"
+            src="./assets/images/Photo-gallery-4.jpg"
+          />
+          <img
+            class="photo__images"
+            src="./assets/images/Photo-gallery-5.jpg"
+          />
+          <img
+            class="photo__images"
+            src="./assets/images/Photo-gallery-6.jpg"
+          />
+          <img
+            class="photo__images"
+            src="./assets/images/Photo-gallery-7.jpg"
+          />
+          <img
+            class="photo__images"
+            src="./assets/images/Photo-gallery-8.jpg"
+          />
+          <img
+            class="photo__images"
+            src="./assets/images/Photo-gallery-9.jpg"
+          />
+        </div>
+      </section>
     </main>
     <footer class="footer">
+      <div class="d-container">
         <section class="social-media">
-            <div class="social-media__container">
-                <h2 class="social-media__heading">Get In Touch</h2>
-                <div class="social-media__icon--holder">
-                    <img class="social-media__icon" src="./assets/icons/SVg/Icon-instagram.svg">
-                    <img class="social-media__icon" src="./assets/icons/SVg/Icon-facebook.svg">
-                    <img class="social-media__icon" src="./assets/icons/SVg/Icon-twitter.svg">
-                </div>
-                <img class="social-media__logo" src="./assets/logo/Logo-bandsite.svg">
+          <div class="social-media__container">
+            <h2 class="social-media__heading">Get In Touch</h2>
+            <div class="social-media__icon--holder">
+              <img
+                class="social-media__icon"
+                src="./assets/icons/SVg/Icon-instagram.svg"
+              />
+              <img
+                class="social-media__icon"
+                src="./assets/icons/SVg/Icon-facebook.svg"
+              />
+              <img
+                class="social-media__icon"
+                src="./assets/icons/SVg/Icon-twitter.svg"
+              />
             </div>
-            <div class="media">
+            <div class="logo__container">
+              <img
+                class="social-media__logo"
+                src="./assets/logo/Logo-bandsite.svg"
+              />
+            </div>
+          </div>
+          <div class="media">
             <div class="media__address">
-                <h4 class="media__bold">Richard Rovner<br>The Bees Knees Management</h4>
-                <div>
-                    <p>460 King Street West</p>
-                    <p>Toronto, Ontario M5V1L7</p>
-                </div>
-                <p>info@thebeesknees.com</p>
+              <h4 class="media__bold">
+                Richard Rovner<br />The Bees Knees Management
+              </h4>
+              <div class="para__container">
+                <p class="footer__para">460 King Street West</p>
+                <p class="footer__para">Toronto, Ontario M5V1L7</p>
+              </div>
+              <p class="footer__para">info@thebeesknees.com</p>
             </div>
             <div class="travel__agents">
-                <h4 class="travel__patners">Marsha Vlasic<br>Artist Group International</h4>
-                <div>
-                    <p>Booking Agent for</p>
-                    <p>US / South America / Japan</p>
-                </div>
-            <p>marsha.vlasic@artistgrp.com</p>
+              <h4 class="travel__patners">
+                Marsha Vlasic<br />Artist Group International
+              </h4>
+              <div class="para__container">
+                <p class="footer__para">Booking Agent for</p>
+                <p class="footer__para">US / South America / Japan</p>
+              </div>
+              <p class="footer__para">marsha.vlasic@artistgrp.com</p>
             </div>
             <div class="global">
-                    <h4 class="global__patners">Russel Warby<br>
-                    William Morrir Entertainment</h4>
-                <div>
-                    <p>Booking Agent for</p>
-                    <p>UK / EU / AU</p>
-                </div>
-                <p>RLW@wmeentertainment.com</p>
+              <h4 class="global__patners">
+                Russel Warby<br />
+                William Morrir Entertainment
+              </h4>
+              <div class="para__container">
+                <p class="footer__para">Booking Agent for</p>
+                <p class="footer__para">UK / EU / AU</p>
+              </div>
+              <p class="footer__para">RLW@wmeentertainment.com</p>
             </div>
-            </div>
+          </div>
         </section>
-        <div>
-            <h5>Copyright The Bees Knees &copy; 2018 <br>
-            All Rights Reserved</h5>
+        <div class="copyright">
+          <h5>Copyright The Bees Knees &copy; 2018</h5>
+          <h5>All Rights Reserved</h5>
         </div>
-    </footer>   
-   
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
