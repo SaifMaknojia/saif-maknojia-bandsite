@@ -442,7 +442,7 @@ body {
 }
 
 .global__patners {
-  margin-top: 1.25rem 0;
+  margin-top: 1.25rem;
 }
 
 .copyright {
@@ -503,8 +503,8 @@ body {
   }
   .photo__images {
     width: calc((100% / 3) - 1rem);
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: .5rem;
+    margin-right: .5rem;
   }
   .photo__heading {
     font-size: 1.5rem;
@@ -552,7 +552,7 @@ body {
   }
   .social-media__heading {
     width: 33.33%;
-    margin-right: 12px;
+    margin-right: .75rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -567,7 +567,7 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: auto 12px;
+    margin: auto .75rem;
   }
   .social-media__container {
     display: -webkit-box;
@@ -579,7 +579,7 @@ body {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-top: 15px;
+    margin-top: .94rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -593,6 +593,12 @@ body {
   }
   .logo__container {
     width: 33.33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .media {
     display: -webkit-box;
