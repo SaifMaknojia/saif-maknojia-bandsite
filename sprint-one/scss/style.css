@@ -696,6 +696,9 @@ body {
   .hero {
     height: 670px;
   }
+  .social-media__icon {
+    margin-left: 2rem;
+  }
   .musician__container {
     padding-left: 92px;
     padding-right: 92px;
@@ -721,8 +724,28 @@ body {
   .court {
     display: none;
   }
-  .footer {
-    padding: 2.5rem 0px;
+  .social-media__container {
+    margin-top: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3.5rem;
+  }
+  .social-media__logo {
+    height: 1.5rem;
+  }
+  .social-media__heading {
+    margin-top: 0;
+  }
+  .para__container:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+  .media {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
+  .copyright {
+    padding-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
