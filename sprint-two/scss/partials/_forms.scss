@@ -94,18 +94,9 @@
     }
 }
 
-// reviews 
-// .reviews{
-//     margin: 0 1rem;
-//     @media(min-width: 768px){
-//         margin: 0 25% 0 35%;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-between;
-//     }
-//     &__container{
-//         width: 224px;
-//         margin: 0 auto;
-//     }
-   
-// }
+
+.output{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
