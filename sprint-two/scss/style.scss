@@ -1,7 +1,8 @@
 @import "partials/font-face";
 @import "partials/typography";
 @import "partials/reusable";
-@import "partials/variable";
+@import "partials/forms";
+@import "partials/shows";
 
 *,
 *::before,
@@ -9,6 +10,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*:focus,
+*:active{
+  outline: none;
 }
 
 html {
@@ -66,8 +72,12 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: $color-silver;
+      
 
+    &--anchor{
+      color: $color-silver;
+      text-decoration: none;
+    }
       &:hover {
         border-color: $color-white;
         color: $color-white;
@@ -78,7 +88,7 @@ body {
 }
 
 .hero {
-  background-image: url(../assets/images/music-event-2.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/images/music-event-2.jpeg);
   background-position: center;
   background-size: cover;
   height: 11.44rem;
