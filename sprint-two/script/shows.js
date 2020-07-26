@@ -60,59 +60,56 @@ let details = [
 
 for (var i = 0; i < details.length; i++){
     let mainContainer = document.createElement('div');
-    mainContainer.classList.add('details__container');
-
-    // let holder = document.createElement('div');
-    // holder.classList.add('venue__container');
+    mainContainer.classList.add('container__details');
 
     //creating div for dates, venue, location and button
     //1.dateholder.
     let dateHolder = document.createElement('div');
-    dateHolder.classList.add('date__container')
+    dateHolder.classList.add('container__dateholder')
 
     //2. VenueHolder
     let venueHolder = document.createElement('div');
-    venueHolder.classList.add('venue__container');
+    venueHolder.classList.add('container__venueholder');
 
     //3. locationHolder
     let locationHolder = document.createElement('div');
-    locationHolder.classList.add('location__container')
+    locationHolder.classList.add('container__locationholder')
 
     //4. buttonHolder
     let button = document.createElement('div');
-    button.classList.add('button__container')
+    button.classList.add('container__buttonholder')
 
     //1st div
     let date = document.createElement('h3');
     date.innerText = details[i].date;
-    date.classList.add('venue__date');
+    date.classList.add('container__dateholder--date');
 
-    let exactDate = document.createElement('h4');
+    let exactDate = document.createElement('p');
     exactDate.innerText = details[i].exactDate;
-    exactDate.classList.add('venue__exact-date');
+    exactDate.classList.add('container__dateholder--exact-date');
 
     // 2nd div
     let venue = document.createElement('h3')
     venue.innerText = details[i].venue;
-    venue.classList.add('location__venue');
+    venue.classList.add('container__venueholder--venue');
 
-    let exactVenue = document.createElement('h4');
+    let exactVenue = document.createElement('p');
     exactVenue.innerText = details[i].exactVenue;
-    exactVenue.classList.add('location__exact-venue');
+    exactVenue.classList.add('container__venueholder--exact-venue');
 
     //3rd div
     let location = document.createElement('h3')
-    location.innerText = details[i].venue;
-    location.classList.add('location__location');
+    location.innerText = details[i].location;
+    location.classList.add('container__locationholder--location');
 
-    let exactLocation = document.createElement('h4');
-    exactLocation.innerText = details[i].exactVenue;
-    exactLocation.classList.add('location__exact-location');
+    let exactLocation = document.createElement('p');
+    exactLocation.innerText = details[i].exactLocation;
+    exactLocation.classList.add('container__locationholder--exact-location');
 
     //4th div
     let buttonInput = document.createElement('button');
     buttonInput.innerHTML = 'Buy Ticket';
-    buttonInput.classList.add('button');
+    buttonInput.classList.add('container__buttonholder--button');
     //wrap it inside date div.
     dateHolder.appendChild(date);
     dateHolder.appendChild(exactDate);

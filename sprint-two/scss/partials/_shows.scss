@@ -7,6 +7,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      height: 41.875rem;
+      padding: 0 10%;
+    }
     // width: 100%;
   
     &__container {
@@ -23,6 +28,9 @@
       @media (min-width: 1200px) {
         padding-right: 0px;
         padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        margin: 10rem 0;
       }
     }
     
@@ -41,11 +49,124 @@
 
     &__iframe{
       margin: 0 1rem 4rem 1rem;
-      border: 8px solid white;
+      height: 150;
+      @media (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+      }
+      &--item{
+        border: 8px solid white;
+        width: 288px;
+        border-radius: 5px;
+      @media (min-width: 768px) {
+        margin: 0 5%;
+        width: 350px;
+      }
+
+      @media (min-width:1200px) {
+        width: 436px;
+        margin-left: 4rem;
+        align-self: center;
+      }
     }
   }
-
+}
 //venue details
 .venue{
-  margin: 2rem 1rem 2.5rem 1rem;
+  margin: 0 5%;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    width: 1080px;
+    justify-content: space-between;
+  }
+
+  &__heading{
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: 1200px) {
+      margin-left: 5%;
+  }
+}
+}
+
+.container{
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 1200px) {
+    width: 804px;
+  }
+
+  &__details{
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0 1rem 0;
+    }
+  }
+  &__dateholder{
+    @media (min-width: 768px){
+      width: 20%;
+    }
+    display: flex;
+    flex-direction: column;
+
+    &--date{
+      color: $color-silver;
+     
+    }
+    &--exact-date{
+      margin: 1rem 0 1.5rem 0;
+      color: $color-black;
+    }
+  }
+  &__venueholder{
+    @media (min-width: 768px){
+      width: 20%;
+    }
+      &--venue{
+        color: $color-silver;
+      
+      }
+
+      &--exact-venue{
+        margin: 1rem 0 1.5rem 0;
+        color: $color-black;
+      }
+  }
+  &__locationholder{
+    @media (min-width: 768px){
+      width: 20%;
+    }
+      &--location{
+        color: $color-silver;
+        
+      }
+      &--exact-location{
+        margin-top: 1rem;
+        color: $color-black;
+      }
+  }
+  &__buttonholder{
+    @media (min-width: 768px){
+      width: 20%;
+    }
+    display: flex;
+      &--button{
+        margin: 2rem 0 1rem 0;
+        height: 3rem;
+        width: 18rem;
+        background-color: $color-black;
+        color: $color-white;
+        border-radius: 5px;
+        @media (min-width: 768px) {
+          width: 100%;
+          margin: 0;
+        }
+      }
+
+  }
 }
