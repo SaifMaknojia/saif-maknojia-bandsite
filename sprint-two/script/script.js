@@ -1,12 +1,12 @@
+
 //Selecetors for dom 
 let button = document.querySelector('#button');
-let name = document.getElementById('name').value;
-let comment = document.getElementById('comments').value;
+let name = document.getElementById('name');
+let comment = document.getElementById('comments');
 let output = document.querySelector('.output');
 let form = document.querySelector('.form')
 
-
-let input = [
+var input = [
     {
         name: 'Theodore Duncan',
         review: 'How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!'
@@ -22,67 +22,61 @@ let input = [
 ];
 
 
-for (var i = input.length - 1; i >=0; i--){
-    let review = document.createElement('div');
-    review.classList.add('reviews');
+displayComments()
 
-    let reviewContainer = document.createElement('div');
-    reviewContainer.classList.add('reviews__container');
-    // let commentHolder = document.createElement('div');
-    // commentHolder.classList.add('reviews__container');
-    let image = document.createElement('div');
-    image.classList.add('review__conatiner--image');
-
-    let commentInput = document.createElement('div');
-    commentInput.classList.add('reviews__display')
-
-    let heading = document.createElement('h2');
-    heading.innerText = input[i].name;
-    heading.classList.add('reviews__display--heading');
-
-    let para = document.createElement('p')
-    para.innerText = input[i].review;
-    para.classList.add('review__display--content');
-
-    // wraping inside div .reviews__container
-    reviewContainer.appendChild(image);
-
-    // wrapping under div review__display
-    commentInput.appendChild(heading);
-    commentInput.appendChild(para);
-
-    // wrapping under div reviews
-    review.appendChild(reviewContainer);
-    review.appendChild(commentInput);
-    // review.appendChild(para);
-    output.appendChild(review);   
+function displayComments() {
+    output.innerHTML = ""
+    for (var i = input.length - 1; i >=0; i--){
+        let review = document.createElement('div');
+        review.classList.add('reviews');
+    
+        let reviewContainer = document.createElement('div');
+        reviewContainer.classList.add('reviews__container');
+        // let commentHolder = document.createElement('div');
+        // commentHolder.classList.add('reviews__container');
+        let image = document.createElement('div');
+        image.classList.add('review__conatiner--image');
+    
+        let commentInput = document.createElement('div');
+        commentInput.classList.add('reviews__display')
+    
+        let heading = document.createElement('h2');
+        heading.innerText = input[i].name;
+        heading.classList.add('reviews__display--heading');
+    
+        let para = document.createElement('p')
+        para.innerText = input[i].review;
+        para.classList.add('review__display--content');
+    
+        // wraping inside div .reviews__container
+        reviewContainer.appendChild(image);
+    
+        // wrapping under div review__display
+        commentInput.appendChild(heading);
+        commentInput.appendChild(para);
+    
+        // wrapping under div reviews
+        review.appendChild(reviewContainer);
+        review.appendChild(commentInput);
+        // review.appendChild(para);
+        output.appendChild(review);   
+    }
 }
 
-
-
-
-var inputNameValue = input.name;
-var inputReviewValue = input.review
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
+    if(name && comments) {
+        input.push({
+            name: name.value,
+            review: comment.value
+        })
+        displayComments()
+        name.value = ""
+        comment.value = ""
+    }
 
-nameValue();
    
 })
-
-
-function nameValue(){
-    if(name == ""){
-        console.log(name)
-    } 
-}
-
-
-// Event Listeners
-// button.addEventListener('submit', function(e){
-//     e.preventDefault();
-//     console.log('button was pressed');
-// })
 
 
