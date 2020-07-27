@@ -1,9 +1,9 @@
 //Selecetors for dom 
 let button = document.querySelector('#button');
-let name = document.querySelector('#name');
-let comment = document.querySelector('comments');
+let name = document.getElementById('name').value;
+let comment = document.getElementById('comments').value;
 let output = document.querySelector('.output');
-
+let form = document.querySelector('.form')
 
 
 let input = [
@@ -19,7 +19,9 @@ let input = [
         name:'Micheal Lyons',
         review: 'They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.'
     }
-]
+];
+
+
 for (var i = input.length - 1; i >=0; i--){
     let review = document.createElement('div');
     review.classList.add('reviews');
@@ -29,41 +31,58 @@ for (var i = input.length - 1; i >=0; i--){
     // let commentHolder = document.createElement('div');
     // commentHolder.classList.add('reviews__container');
     let image = document.createElement('div');
-    image.classList.add('review__image');
+    image.classList.add('review__conatiner--image');
 
     let commentInput = document.createElement('div');
-    commentInput.classList.add('.reviews__display')
+    commentInput.classList.add('reviews__display')
 
     let heading = document.createElement('h2');
     heading.innerText = input[i].name;
-    heading.classList.add('reviews__heading');
+    heading.classList.add('reviews__display--heading');
 
     let para = document.createElement('p')
     para.innerText = input[i].review;
-    para.classList.add('.review__content');
-
+    para.classList.add('review__display--content');
 
     // wraping inside div .reviews__container
     reviewContainer.appendChild(image);
-
 
     // wrapping under div review__display
     commentInput.appendChild(heading);
     commentInput.appendChild(para);
 
-
     // wrapping under div reviews
     review.appendChild(reviewContainer);
     review.appendChild(commentInput);
     // review.appendChild(para);
+    output.appendChild(review);   
+}
 
-    output.appendChild(review);
 
+
+
+var inputNameValue = input.name;
+var inputReviewValue = input.review
+
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+nameValue();
+   
+})
+
+
+function nameValue(){
+    if(name == ""){
+        console.log(name)
+    } 
 }
 
 
 // Event Listeners
-button.addEventListener('click', function(e){
-    e.preventDefault();
-    console.log('button was pressed');
-})
+// button.addEventListener('submit', function(e){
+//     e.preventDefault();
+//     console.log('button was pressed');
+// })
+
+

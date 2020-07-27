@@ -288,6 +288,29 @@
           justify-content: space-between;
 }
 
+/* 
+  <section class="reviews">
+    <div class="reviews__container">
+        <div class="review__container--image">
+        <div>
+        <div class="review__display">
+            <h4 class="reviews__container--heading">Micheal Lyons</h4>
+            <p class="reviews__content">They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.</p>
+        </div>
+    </div>
+  
+       */
+.output {
+  width: 288px;
+  margin-left: 40%;
+}
+
+.review__container--image {
+  background-color: gray;
+  height: 32rem;
+  width: 32rem;
+}
+
 .shows {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/images/shows-hero.jpeg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/shows-hero.jpeg);
@@ -305,6 +328,14 @@
       justify-content: space-around;
 }
 
+@media (min-width: 768px) {
+  .shows {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media (min-width: 1200px) {
   .shows {
     -webkit-box-orient: horizontal;
@@ -318,7 +349,6 @@
 
 .shows__container {
   color: white;
-  height: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -389,9 +419,7 @@
   .shows__iframe--item {
     width: 436px;
     margin-left: 4rem;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    margin-top: 35%;
   }
 }
 
@@ -408,6 +436,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 3rem;
   }
 }
 
@@ -561,6 +590,13 @@ body {
   max-width: 67.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .d-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .nav {

@@ -100,3 +100,36 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+
+
+/* 
+  <section class="reviews">
+    <div class="reviews__container">
+        <div class="review__container--image">
+        <div>
+        <div class="review__display">
+            <h4 class="reviews__container--heading">Micheal Lyons</h4>
+            <p class="reviews__content">They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.</p>
+        </div>
+    </div>
+  
+       */
+
+
+      .output {
+          width: 288px;
+          margin-left: 40%;
+      }
+
+
+      .review__container{
+   
+
+          &--image{
+            background-color: gray;
+            height: 32rem;
+            width: 32rem;
+          }
+      }
