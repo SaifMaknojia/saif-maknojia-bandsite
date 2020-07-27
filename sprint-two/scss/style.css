@@ -150,7 +150,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .form {
     margin: 0 25%;
   }
@@ -158,7 +158,6 @@
 
 .form__holder {
   margin-top: 1.7rem;
-  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,9 +263,21 @@
   }
 }
 
+@media (min-width: 768px) {
+  .comment {
+    padding: 0 8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .comment {
+    padding: 0 8%;
+  }
+}
+
 .comment__heading {
   font-size: 1rem;
-  margin: 3rem 0 3.5rem 0;
+  margin: 3rem 0 3.5rem 1rem;
 }
 
 @media (min-width: 768px) {
@@ -286,29 +297,62 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-/* 
-  <section class="reviews">
-    <div class="reviews__container">
-        <div class="review__container--image">
-        <div>
-        <div class="review__display">
-            <h4 class="reviews__container--heading">Micheal Lyons</h4>
-            <p class="reviews__content">They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.</p>
-        </div>
-    </div>
-  
-       */
-.output {
   width: 288px;
-  margin-left: 40%;
+  margin-left: 5%;
 }
 
-.review__container--image {
-  background-color: gray;
-  height: 32rem;
-  width: 32rem;
+@media (min-width: 768px) {
+  .output {
+    margin-top: 3%;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .output {
+    margin-top: 3%;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.reviews {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    margin: 3% 17%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    margin: 3% 27%;
+  }
+}
+
+.reviews__display--content {
+  margin-top: 1rem;
+}
+
+.reviews__container--image {
+  background-color: #afafaf;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .shows {
@@ -564,6 +608,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .container .comment__heading {
+    margin: 0 1.5rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -586,22 +636,15 @@ body {
   font-family: "AvenirNext LT Pro", sans-serif;
 }
 
-.d-container {
-  max-width: 67.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .d-container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 .nav {
   background-color: #323232;
   height: 5rem;
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    padding: 0 8%;
+  }
 }
 
 .nav__container {
@@ -721,6 +764,12 @@ body {
   line-height: 2rem;
 }
 
+@media (min-width: 1200px) {
+  .hero__heading {
+    padding: 0 8%;
+  }
+}
+
 .content {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -735,8 +784,7 @@ body {
 
 @media (min-width: 1200px) {
   .content {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 0 8%;
   }
 }
 
@@ -747,6 +795,12 @@ body {
 .musician__heading {
   font-size: .875rem;
   line-height: 1.375rem;
+}
+
+@media (min-width: 1200px) {
+  .musician__heading {
+    padding: 0 8%;
+  }
 }
 
 .musician__teamquote {
@@ -775,7 +829,12 @@ body {
   padding-left: 1rem;
   margin-top: 1.875rem;
   color: #fff;
-  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 0 8%;
+  }
 }
 
 .social-media {
@@ -919,6 +978,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
+    margin: 0 1.5rem;
   }
   .nav__list {
     display: -webkit-box;
@@ -1193,6 +1253,9 @@ body {
   }
   .copyright {
     padding-top: 0;
+  }
+  .footer {
+    padding: 0 8%;
   }
 }
 /*# sourceMappingURL=style.css.map */

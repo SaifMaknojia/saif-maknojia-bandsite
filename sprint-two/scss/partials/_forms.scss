@@ -8,13 +8,13 @@
     @media (min-width: 768px) {
         margin: 0 10%;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
         margin: 0 25%;
     }
 
     &__holder{
         margin-top: 1.7rem;
-        width: 20%;
+        // width: 20%;
         display: flex;
         justify-content: flex-end;
         margin-left: 5%;
@@ -85,9 +85,15 @@
 }
 
 .comment{
+    @media (min-width: 768px){
+        padding: 0 8%;
+      }
+    @media (min-width: 1200px){
+        padding: 0 8%;
+      }
     &__heading{
         font-size: 1rem;
-        margin: 3rem 0 3.5rem 0;
+        margin: 3rem 0 3.5rem 1rem;
         @media(min-width: 768px){
             margin: 1.6rem;
         }
@@ -99,37 +105,47 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 288px;
+    margin-left: 5%;
+    @media (min-width: 768px){
+        margin-top: 3%;
+        width: 100%;
+        justify-content: flex-start;
+      }
+    @media (min-width: 1200px){
+        margin-top: 3%;
+        width: 100%;
+        justify-content: flex-start;
+      }
 }
 
+      .reviews{
+          margin: 1.5rem 0;
+          display: flex;
+          @media (min-width: 768px){
+            margin: 3% 17%;
+        }
+        @media (min-width: 1200px){
+            margin: 3% 27%;
+        }
+          &__display{
 
-
-
-/* 
-  <section class="reviews">
-    <div class="reviews__container">
-        <div class="review__container--image">
-        <div>
-        <div class="review__display">
-            <h4 class="reviews__container--heading">Micheal Lyons</h4>
-            <p class="reviews__content">They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.</p>
-        </div>
-    </div>
-  
-       */
-
-
-      .output {
-          width: 288px;
-          margin-left: 40%;
+            &--content{
+                margin-top: 1rem;
+            }
+             
+          }
       }
 
 
-      .review__container{
-   
+      .reviews__container{
 
           &--image{
-            background-color: gray;
-            height: 32rem;
-            width: 32rem;
+            background-color: $color-silver ;
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+            align-self: center;
           }
       }

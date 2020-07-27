@@ -32,21 +32,20 @@ function displayComments() {
     
         let reviewContainer = document.createElement('div');
         reviewContainer.classList.add('reviews__container');
-        // let commentHolder = document.createElement('div');
-        // commentHolder.classList.add('reviews__container');
+        
         let image = document.createElement('div');
-        image.classList.add('review__conatiner--image');
+        image.classList.add('reviews__container--image');
     
         let commentInput = document.createElement('div');
         commentInput.classList.add('reviews__display')
     
         let heading = document.createElement('h2');
-        heading.innerText = input[i].name;
+        heading.innerText = `${input[i].name}   ${(new Date()).getDate()}/${(new Date()).getMonth()}/${(new Date()).getFullYear()}` ;
         heading.classList.add('reviews__display--heading');
     
         let para = document.createElement('p')
         para.innerText = input[i].review;
-        para.classList.add('review__display--content');
+        para.classList.add('reviews__display--content');
     
         // wraping inside div .reviews__container
         reviewContainer.appendChild(image);
@@ -66,7 +65,7 @@ function displayComments() {
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-    if(name && comments) {
+    if(name.value && comments.value) {
         input.push({
             name: name.value,
             review: comment.value
@@ -75,8 +74,10 @@ form.addEventListener('submit', function(e){
         name.value = ""
         comment.value = ""
     }
-
-   
 })
 
 
+
+// (new Date()).getDate();
+// (new Date()).getMonth();
+// (new Date()).getFullYear();
