@@ -142,6 +142,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 100%;
+  color: #afafaf;
 }
 
 @media (min-width: 768px) {
@@ -259,7 +260,7 @@
 
 @media (min-width: 768px) {
   .input__special {
-    height: 3rem;
+    height: 7rem;
   }
 }
 
@@ -283,6 +284,7 @@
 @media (min-width: 768px) {
   .comment__heading {
     margin: 1.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -340,8 +342,22 @@
   }
 }
 
+@media (min-width: 768px) {
+  .reviews__display--heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 .reviews__display--content {
   margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .reviews__display--content {
+    font-size: .875rem;
+    line-height: 1.3rem;
+  }
 }
 
 .reviews__container--image {
