@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BandSite</title>
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="stylesheet" href="./scss/style.css" />
   </head>
   <body>
@@ -116,26 +112,42 @@
     </main>
     <section class="comment">
       <h2 class="comment__heading d-container">Join the Conversation</h2>
-      <form class="form">
+      <form class="form" id="commentsForm">
         <div class="form__holder">
-          <img class="form__holder--image" src="./assets/images/Mohan-muruge.jpg">
+          <img
+            class="form__holder--image"
+            src="./assets/images/Mohan-muruge.jpg"
+          />
         </div>
         <div class="form__input">
           <div class="form__input--items">
             <label for="name">Name</label>
-            <input class="form__input--box" type="text" placeholder="&nbsp;Name" id="name" name="name">
+            <input
+              class="form__input--box"
+              type="text"
+              placeholder="&nbsp;Name"
+              id="name"
+              name="name"
+            />
           </div>
           <div class="form__input--items">
             <label for="comments">Comments</label>
-            <textarea class="form__input--box input__special" type="textarea" placeholder="&nbsp;Add a Comments" id="comments" name="comments"></textarea>
+            <textarea
+              class="form__input--box input__special"
+              type="textarea"
+              placeholder="&nbsp;Add a Comments"
+              id="comments"
+              name="comments"
+            ></textarea>
           </div>
           <div class="form__button">
-            <button id="button" class="form__button--black">Comment</button>
+            <button id="button" type="submit" class="form__button--black">
+              Comment
+            </button>
           </div>
         </div>
       </form>
-      <section class="output">
-      </section>
+      <section class="output" id="displayComments"></section>
     </section>
     <footer class="footer">
       <div class="d-container footer--speacial">
@@ -204,6 +216,6 @@
       </div>
     </footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-  <script src="./script/script.js"></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>

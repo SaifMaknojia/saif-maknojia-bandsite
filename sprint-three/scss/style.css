@@ -1,6 +1,6 @@
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-LightIt.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-LightIt.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-Medium.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-DemiIt.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-DemiIt.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-Heavy.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-Heavy.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-MediumIt.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-MediumIt.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-Light.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-Thin.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-ThinIt.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-ThinIt.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -80,7 +80,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-It.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-It.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro UltLight";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-UltLt.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-UltLt.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -96,7 +96,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro UltLight";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-UltLtIt.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-UltLtIt.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -104,7 +104,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-HeavyIt.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-HeavyIt.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -112,7 +112,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-Demi.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-Demi.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -120,7 +120,7 @@
 
 @font-face {
   font-family: "AvenirNext LT Pro";
-  src: url("../../assets/fonts/alt/AvenirNextLTPro-BoldIt.ttf") format("truetype");
+  src: url("../assets/fonts/AvenirNextProLT/.alt/Linotype - AvenirNextLTPro-BoldIt.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -246,6 +246,7 @@
   border-color: #323232;
   border-radius: 5px;
   font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -299,14 +300,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 288px;
   margin-left: 5%;
 }
 
 @media (min-width: 768px) {
   .output {
     margin-top: 3%;
-    width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -316,47 +315,9 @@
 @media (min-width: 1200px) {
   .output {
     margin-top: 3%;
-    width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-}
-
-.reviews {
-  margin: 1.5rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .reviews {
-    margin: 3% 17%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .reviews {
-    margin: 3% 27%;
-  }
-}
-
-@media (min-width: 768px) {
-  .reviews__display--heading {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-.reviews__display--content {
-  margin-top: 1rem;
-}
-
-@media (min-width: 768px) {
-  .reviews__display--content {
-    font-size: .875rem;
-    line-height: 1.3rem;
   }
 }
 
@@ -369,6 +330,42 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.main__container {
+  margin: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .main__container {
+    margin: 0 25%;
+  }
+}
+
+.image__container--background {
+  background: #afafaf;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .nameDate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem 0;
+  }
+}
+
+.output__container--date {
+  margin-left: 1rem;
+  color: #afafaf;
 }
 
 .shows {

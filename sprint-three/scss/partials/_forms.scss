@@ -69,6 +69,7 @@
             border-color: $color-black;
             border-radius: 5px;
             font-size: 1rem;
+            margin-bottom: 1.5rem;
     
 
             @media (min-width: 768px) {
@@ -107,47 +108,47 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 288px;
+    // width: 288px;
     margin-left: 5%;
     @media (min-width: 768px){
         margin-top: 3%;
-        width: 100%;
+        // width: auto;
         justify-content: flex-start;
       }
     @media (min-width: 1200px){
         margin-top: 3%;
-        width: 100%;
+        // width: auto;
         justify-content: flex-start;
       }
 }
 
-      .reviews{
-          margin: 1.5rem 0;
-          display: flex;
-          @media (min-width: 768px){
-            margin: 3% 17%;
-        }
-        @media (min-width: 1200px){
-            margin: 3% 27%;
-        }
-          &__display{
-            &--heading{
-                @media (min-width: 768px){
-                    font-size: 1.5rem;
-                    line-height: 2rem;
-                }
-            }
-            &--content{
-                margin-top: 1rem;
+    //   .reviews{
+    //       margin: 1.5rem 0;
+    //       display: flex;
+    //       @media (min-width: 768px){
+    //         margin: 3% 17%;
+    //     }
+    //     @media (min-width: 1200px){
+    //         margin: 3% 27%;
+    //     }
+    //       &__display{
+    //         &--heading{
+    //             @media (min-width: 768px){
+    //                 font-size: 1.5rem;
+    //                 line-height: 2rem;
+    //             }
+    //         }
+    //         &--content{
+    //             margin-top: 1rem;
 
-                @media (min-width: 768px){
-                font-size: .875rem;
-                line-height: 1.3rem;
-                }
-            }
+    //             @media (min-width: 768px){
+    //             font-size: .875rem;
+    //             line-height: 1.3rem;
+    //             }
+    //         }
              
-          }
-      }
+    //       }
+    //   }
 
 
       .reviews__container{
@@ -161,3 +162,41 @@
             align-self: center;
           }
       }
+
+    .main__container{
+        margin: 1.5rem 1rem;
+        display: flex;
+
+        @media(min-width: 1200px){
+            margin: 0 25%;
+        }
+    }
+
+    .image__container{
+       
+
+        &--background{
+            background: $color-silver;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-top: 1.5rem;
+            margin-right: 1rem;
+
+
+        }
+    }
+
+    .nameDate{
+        @media(min-width: 768px){
+            display: flex;
+
+            margin: 1rem 0;
+        }
+    }
+
+
+    .output__container--date{
+        margin-left:1rem;
+        color: $color-silver;
+    }
