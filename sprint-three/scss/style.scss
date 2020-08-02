@@ -1,0 +1,533 @@
+@import "partials/font-face";
+@import "partials/typography";
+@import "partials/reusable";
+@import "partials/forms";
+@import "partials/shows";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active{
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  // overflow-x: hidden;
+}
+
+body {
+  // overflow-x: hidden;
+  font-family: "AvenirNext LT Pro", sans-serif;
+  // got the above property from stack overflow as i was not able to get hite margin on right eliminated.
+}
+
+// // .d-container {
+// //   max-width: 67.5rem;
+// //   margin-left: auto;
+// //   margin-right: auto;
+// //   @media (min-width: 768px) {
+// //     margin-left: 0;
+// //     margin-right: 0;
+// //   }
+// //   @media  (min-width: 1200px) {
+// //     margin-left: auto;
+// //     margin-right: auto;
+// //   }
+// }
+
+.nav {
+  background-color: $color-black;
+  // width: 100vw;
+  height: 5rem;
+  @media (min-width: 1200px){
+    padding: 0 8%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media (min-width: 768) {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    @media (min-width: 1200px) {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  &__logo {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    height: 2.5rem;
+    list-style-type: none;
+    display: flex;
+
+    &-item {
+      border-bottom: .25rem solid transparent;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+
+    &--anchor{
+      color: $color-silver;
+      text-decoration: none;
+    }
+      &:hover {
+        border-color: $color-white;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/images/music-event-2.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 11.44rem;
+  // width: 100%;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media (min-width: 768px) {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    @media (min-width: 1200px) {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-self: center;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    @media (min-width: 1200px){
+      padding: 0 8%;
+    }
+  }
+}
+
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (min-width: 768px) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  @media (min-width: 1200px) {
+      padding: 0 8%;
+    }
+  
+}
+// main section
+.musician {
+  // margin: 0 1rem;
+
+  &__image {
+    width: 100%;
+    // height: 145px;
+  }
+
+  &__heading {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    @media (min-width: 1200px){
+      padding: 0 8%;
+    }
+  }
+
+  &__teamquote {
+    margin: 2.5rem 0 1.5rem 0;
+  }
+  &__info--special {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.photo {
+  // margin: 0 1rem;
+
+  &__imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__images {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+// Footer
+.footer {
+  background-color: $color-black;
+  padding-left: 1rem;
+  margin-top: 1.875rem;
+  color: $color-white;
+ 
+  @media (min-width: 1200px){
+    padding: 0 8%;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__heading {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-top: 1.25rem;
+  }
+  &__logo {
+    display: none;
+  }
+  &__icon--holder {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 0.6rem;
+    margin: 1.25rem 0;
+  }
+}
+
+.media {
+  @include footerColumnMobil();
+
+  &__address {
+    @include footerColumnMobil();
+
+    &__bold {
+      margin-top: 1.25rem;
+    }
+  }
+}
+
+.travel__patners {
+  margin-top: 1.25rem;
+  font-style: .812rem;
+}
+
+.para__container {
+  margin: 1.25rem 0;
+  font-size: .812rem;
+}
+
+.travel__agents {
+  @include footerColumnMobil();
+}
+
+.global {
+  @include footerColumnMobil();
+
+  &__patners {
+    margin-top: 1.25rem;
+  }
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.25rem 0;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    &__container {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+      margin: 0 1.5rem;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      font-size: .875rem;
+      line-height: 1.375rem;
+      &-item {
+        height: 100%;
+       
+          margin-left: 3.5rem;
+        
+      }
+      &-item:last-of-type {
+        margin-left: 3rem;
+      }
+    }
+  }
+  .hero {
+    height: 400px;
+
+    &__heading {
+      font-size: 3.75rem;
+      line-height: 4.25rem;
+    }
+  }
+  .photo {
+    &__images {
+      width: calc((100% / 3) - 1rem);
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
+    &__heading{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  .musician {
+    // margin: 0 1.5rem;
+    &__incolumn {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__info--space{
+      font-size: .875rem;
+      line-height: 1.375rem;
+    }
+    &__info--special {
+      margin-left: 1.5rem;
+      
+    }
+    &__heading{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    &__quote{
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    &__teamquote{
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+    &__heading {
+      width: 33.33%;
+      margin-right: .75rem;
+      align-items: center;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    &__icon--holder {
+      width: 33.33%;
+      display: flex;
+      justify-content: space-evenly;
+      margin: auto .75rem;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: .94rem;
+      align-items: center;
+    }
+
+    &__logo {
+      align-self: flex-start;
+      display: flex;
+    }
+  }
+
+  .logo__container {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.875rem;
+    flex-direction: row;
+
+    &__bold{
+      font-size: .875rem;
+      line-height: 1.375rem;
+    }
+  }
+
+  .travel__patners {
+    margin-top: 0;
+  
+  }
+  .footer {
+    padding: 0 1.5rem;
+  }
+  .media__address,
+  .travel__agents,
+  .global {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.33%;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    &:first-of-type {
+      margin-right: 12px;
+    }
+    &:last-of-type {
+      margin-left: 12px;
+    }
+    &:not(:first-of-type):not(:last-of-type) {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+  }
+}
+
+.para__container {
+  margin: 1.25rem 0;
+  font-size: .875rem;
+  line-height: 1.375rem;
+  
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-start;
+    &__list{
+      margin-right: 0;
+    }
+
+    &__list-item{
+      margin-left: 3.5rem;
+    }
+  }
+
+  .hero {
+    height: 670px;
+  }
+
+  .social-media__icon{
+    margin-left: 2rem;
+  }
+
+  .musician {
+    &__container {
+      padding-left: 92px;
+      padding-right: 92px;
+    }
+
+    &__image {
+      // width:896px;
+
+      display: block;
+    }
+    &__quote {
+      // width: 896px;
+      margin: 3rem auto 2.5rem auto;
+    }
+    &__name {
+      // width: 896px;
+      margin: 0 auto 56px auto;
+    }
+    &__teamquote {
+      // width: 896px;
+      margin: 0 auto 2rem auto;
+    }
+    &__incolumn {
+      // width: 896px;
+      margin: 0 auto;
+    }
+    &__info--space {
+      width: 50%;
+    }
+  }
+  .court {
+    display: none;
+  }
+
+  .social-media{
+
+    &__container{
+      margin-top: 3rem;
+      align-items: center;
+      margin-bottom: 3.5rem;
+    }
+
+    &__logo {
+      height: 1.5rem;
+    }
+
+    &__heading{
+     margin-top: 0;
+   
+    }
+    
+  }
+
+  .para__container {
+    &:nth-child(2){
+      margin-top: 1.5rem;
+    }
+  }
+
+  .media {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .copyright{
+    padding-top: 0;
+  }
+.footer{
+  padding: 0 8%;
+}
+}
+
