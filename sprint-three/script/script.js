@@ -45,7 +45,7 @@ insertComments = () => {
     let commentHolder = document.createElement('p');
     commentHolder.innerText = element.comment;
     commentHolder.classList.add('comments__review');
-    // image holder
+    
     mainContainer.appendChild(imageContainer);
 
     //name date and review holder
